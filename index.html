@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>UXD-Tag Lottie Animation</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.6/lottie.min.js"></script>
+  <style>
+    html, body {
+      margin: 0; padding: 0; background: transparent; overflow: hidden;
+      display: flex; justify-content: center; align-items: center; height: 100vh;
+    }
+    #lottie {
+      width: 400px;
+      height: 400px;
+    }
+  </style>
+</head>
+<body>
+  <div id="lottie"></div>
+  <script>
+    var animation = lottie.loadAnimation({
+      container: document.getElementById('lottie'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: 'https://raw.githubusercontent.com/c0reywest/uxdtag/refs/heads/main/UXD-Tag.json'
+    });
+  </script>
+</body>
+</html>
